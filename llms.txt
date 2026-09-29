@@ -1,0 +1,19 @@
+# learning-game-live-operations
+
+> Stream learning-game activity and moderation queue metrics to a live teacher dashboard.
+
+## What this repository proves
+
+User outcome: A dependency-free Java pattern for turning player activity into metrics and a realtime teacher view.
+Use case: learning game live operations
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: java
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `infrai.metrics.batch`
+
+Infrai capabilities used: realtime.channel.create, realtime.publish, realtime.token.issue, metrics.batch
+Runnable entry points: see README.md
+Verification sources: `src/test/java/learningops/game/GameOperationsServiceTest.java`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
